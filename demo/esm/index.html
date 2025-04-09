@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>Demo</h1>
+<div id="app"></div>
+<script type="module">
+    import { createApp } from "vue/dist/vue.esm-bundler.js";
+    import TidyUi from "../../dist/tidy-ui.esm.js";
+
+    createApp({
+        template: `
+      <SFCButton/>
+      <JSXButton/>
+      <SButton/>
+    `}).use(TidyUi).mount('#app')
+
+</script>
+</body>
+</html>
